@@ -18,6 +18,11 @@
       <div class="header__inner">
         <div class="header__top">
           <nav class="menu">
+            <button class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item"><a class="menu__link" href="#">О НАС</a></li>
               <li class="menu__item"><a class="menu__link" href="#">СТОИМОСТЬ</a></li>
@@ -92,23 +97,23 @@
                 <td class="about__table-td">вернешься?</td>
               </tr>
               <tr class="about__table-tr">
-                <td class="about__table-td">
+                <td aria-label="время в пути" class="about__table-td">
                   1
                   <span>час</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="расстояние" class="about__table-td">
                   80
                   <span>км</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="в невесомости" class="about__table-td">
                   4-5
                   <span>мин</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="стоимость" class="about__table-td">
                   250
                   <span>тыс. дол</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="вернешься?" class="about__table-td">
                   99
                   <span>%</span>
                 </td>
@@ -119,7 +124,6 @@
             </button>
           </div>
         </div>
-        <!-- ----------------- -->
         <div class="about__item">
           <img class="about__img" src="images/bezos.jpg" alt="bezos">
           <div class="about__content">
@@ -153,23 +157,23 @@
                 <td class="about__table-td">вернешься?</td>
               </tr>
               <tr class="about__table-tr">
-                <td class="about__table-td">
+                <td aria-label="время в пути" class="about__table-td">
                   1
                   <span>час</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="расстояние" class="about__table-td">
                   100
                   <span>км</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="в невесомости" class="about__table-td">
                   4-5
                   <span>мин</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="стоимость" class="about__table-td">
                   250
                   <span>тыс. дол</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="вернешься?" class="about__table-td">
                   99
                   <span>%</span>
                 </td>
@@ -180,7 +184,6 @@
             </button>
           </div>
         </div>
-        <!-- -----------------  -->
         <div class="about__item">
           <img class="about__img" src="images/mask.jpg" alt="mask">
           <div class="about__content">
@@ -215,23 +218,23 @@
                 <td class="about__table-td">вернешься?</td>
               </tr>
               <tr class="about__table-tr">
-                <td class="about__table-td">
+                <td aria-label="время в пути" class="about__table-td">
                   150
                   <span>дней</span>
                 </td>
-                <td class="about__table-td">
+                <td  aria-label="расстояние" class="about__table-td">
                   55
                   <span>млн. км</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="в невесомости" class="about__table-td">
                   много
                   <span>мин</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="стоимость"  class="about__table-td">
                   10
                   <span>млрд. дол</span>
                 </td>
-                <td class="about__table-td">
+                <td aria-label="вернешься?" class="about__table-td">
                   1
                   <span>%</span>
                 </td>
@@ -282,7 +285,6 @@
                 </p>
               </foreignObject>
             </g>
-
             <g>
               <circle cx="406" cy="535" r="10" fill="white" />
               <foreignObject x="431" y="545" width="154" height="70">
@@ -291,7 +293,6 @@
                 </p>
               </foreignObject>
             </g>
-
             <g>
               <circle cx="545" cy="435" r="10" fill="white" />
               <foreignObject x="570" y="420" width="273" height="100">
@@ -300,16 +301,23 @@
                 </p>
               </foreignObject>
             </g>
-
           </svg>
-
+          <ul class="how-to__box-list">
+            <li class="how-to__box-item">Выбираете программу</li>
+            <li class="how-to__box-item">Оплачиваете</li>
+            <li class="how-to__box-item">Какая-то будет подготовка</li>
+            <li class="how-to__box-item">Садимся. Летим. Невесомость</li>
+            <li class="how-to__box-item">Делаем фото в инстаграм</li>
+            <li class="how-to__box-item">Приземляемся, но это не точно</li>
+            <li class="how-to__box-item">Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное, безглютеновое, обычное)</li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="to-book">
       <div class="container">
         <div class="to-book__inner">
-          <h2 class="title">
+          <h2 class="title to-book__title">
             Успей <br> забронировать!
           </h2>
           <p class="to-book__text">
@@ -370,7 +378,7 @@
       </div>
       <div class="services">
         <div class="container">
-          <h2 class="title">
+          <h2 class="title services__title">
             Дополнительные <br> услуги
           </h2>
           <div class="services__inner">
@@ -430,7 +438,7 @@
               <input class="contacts__form-input" placeholder="ФИО" type="text">
               <input class="contacts__form-input" placeholder="Имя ребенка или внука (на всякий случай)" type="text">
               <input class="contacts__form-input" placeholder="Телефон" type="tel">
-              <button class="button" type="submit"></button>
+              <button class="button contacts__btn" type="submit">ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
             </form>
           </div>
           <div class="contacts__guarantees">
@@ -446,31 +454,34 @@
       </div>
     </section>
   </main>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">
+          <p>Служба поддержки работает межгалактично и суборбитально</p>
+          <p>График приема посетителей строго по записи</p>
+        </div>
+        <ul class="footer__menu">
+          <li class="footer__menu-item"><a class="footer__menu-link" href="#">О НАС</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link" href="#">СТОИМОСТЬ</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link" href="#">ДОП. УСЛУГИ</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link" href="#">ГАРАНТИИ</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link" href="#">НОВОСТИ</a></li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__links-item"><a class="footer__links-link" href="#">spacex.com</a></li>
+          <li class="footer__links-item"><a class="footer__links-link" href="#">blueorigin.com</a></li>
+          <li class="footer__links-item"><a class="footer__links-link" href="#">virgingalactic.com</a></li>
+          <li class="footer__links-item"><a class="footer__links-link" href="tel: 0 800 000 000 00">0 800 000 000 00</a></li>
+          <li class="footer__links-item"><a class="footer__links-link" href="#">МКС</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
-</html>
-
-
-<html style="height:100%">
-
-<head>
-  <meta content="NOINDEX, NOFOLLOW" name="ROBOTS" />
-  <meta content="telephone=no" name="format-detection" />
-  <meta content="initial-scale=1.0" name="viewport" />
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-</head>
-
-<body style="margin:0px;height:100%">
-  <iframe frameborder="0" height="100%" id="main-iframe" marginheight="0px" marginwidth="0px"
-    src="/_Incapsula_Resource?CWUDNSAI=23&amp;xinfo=14-274429496-0%200NNN%20RT%281630670838993%2054%29%20q%280%20-1%20-1%20-1%29%20r%280%20-1%29%20B15%2811%2c1450795%2c0%29%20U12&amp;incident_id=769000420597379953-903553298269801102&amp;edet=15&amp;cinfo=0b000000&amp;rpinfo=0&amp;mth=GET"
-    width="100%">Request unsuccessful. Incapsula incident ID: 769000420597379953-903553298269801102
-  </iframe>
-</body>
-
 </html>
